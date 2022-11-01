@@ -1,0 +1,81 @@
+.plan, .image, .plan:hover .image, .buttonPlan, .plan:hover .buttonPlan{
+    transition: 1s;
+}
+
+.plan {
+    text-align: center;
+    padding: 16px;
+    width: fit-content;
+    height: fit-content;
+    min-width: 300px;
+    min-height: 555px;
+    background-color: white;
+    position: relative;
+    margin-left: 15px;
+    border-radius: 10px;
+    box-shadow:
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.plan:first-child{
+    margin-left: 0;
+}
+
+.image {
+    width: 30vh;
+    height: 30vh;
+    margin-left: auto;
+}
+
+.title, .subtitle, .price{
+    display: flex;
+    margin-left: 40px;
+}
+
+.price {
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+.plan:hover{
+    color: white;
+    background-color: #5a45f2;
+    padding: 38px;
+}
+
+.plan:hover .image{
+    width: 34vh;
+    height: 34vh;
+}
+
+.plan:hover .buttonPlan{
+    width: 300px;
+    height: 65px;
+    background-color: white;
+    color: #5a45f2;
+}
+
+.benefitList {
+    list-style-type: none;
+}
+
+.benefit{
+    opacity: 0.4;
+    display: flex;
+    width: 100%;
+}
+
+.benefit.checked{
+    opacity: 1;
+}
+
+.buttonPlan{
+    width: 280px;
+    height: 45px;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 0;
+    background-color: #5a45f2;
+    color: white;
+}

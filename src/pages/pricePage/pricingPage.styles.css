@@ -1,0 +1,20 @@
+.plans{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1130px) {
+    .plans {
+      height: 100%;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-bottom: 16px;
+    }
+    .plan{
+        margin-top: 16px;
+        margin-left: 0;
+    }
+  }
