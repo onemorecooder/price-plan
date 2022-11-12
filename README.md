@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# ESTRUCTURA DEL PROYECTO
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+He decidido dividir el proyecto en varios componentes para que sea lo más
+reutilizable posible, como es el caso de cada carta, en las cuales se ha
+creado un aplantilla para cargar la distinta información de cada plan.
 
-## Available Scripts
+Para cargar la información, he creado un fichero de configuración en el
+cual see introduce toda la información y luego en cada carta se mapea 
+dicha información dependiendo del plan que se decida introducir, así será
+posible poder utilizar las cartas creadas con distintos propósitos.
 
-In the project directory, you can run:
+En el caso de los iconos, creo un componente llamado icono para no tener
+que importar los iconos uno por uno, sino que con el componente se carga
+el nombre clave de cada icono y se carga el icono que se desee.
 
-### `npm start`
+Para el tema de las animaciones he decidido crear una transformación del
+eje Y para que al clickar en el botón de cada plan la carta gire y se muestre
+una información distinta, en este caso la información para introducir el correo
+electrónico. También se utiliza useState para saber cuando una carta está 
+girada o no y poder cambiar su estado de forma más fácil.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+He instalado la librería framer-motion para que las animaciones sean más suaves
+y sean visualmente más interesantes.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+También he utilizado la librería de react-modal para crear el "pop-up" que aparece
+al clickar en el botón del formulario que nos aparece al girar la carta para 
+que el usuario se suscriba a uno de los diferentes planes.
 
-### `npm test`
+# NOTA SONARCLOUD
+PASSED
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Adjunto una captura de pantalla del resultado del análisis del proyecto. `/nota_sonarCloud.png`;

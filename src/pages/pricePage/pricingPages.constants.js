@@ -13,9 +13,6 @@ export const pricingPageConfig = [{
         { checked: false, text: "Cooking recipes" },
     ],
     textButton: "Get Started",
-    onClick: () => {
-        console.log("Free");
-    }
 }, {
     img: "img2.png",
     planName: "Pro",
@@ -31,9 +28,6 @@ export const pricingPageConfig = [{
         { checked: false, text: "Cooking recipes" },
     ],
     textButton: "Become a Pro",
-    onClick: () => {
-        console.log("Pro");
-    }
 }, {
     img: "img3.png",
     planName: "Teams",
@@ -49,8 +43,5 @@ export const pricingPageConfig = [{
         { checked: true, text: "Cooking recipes" },
     ],
     textButton: "Get Teams",
-    onClick: () => {
-        console.log("Teams");
-    }
 }];
 
